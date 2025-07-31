@@ -1,0 +1,62 @@
+# Python / Flask specific ignores
+##################################
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Virtual environment
+venv/
+.venv/
+
+# Database files
+*.sqlite3
+*.db
+/backend/db.sqlite3 # Specific to your shown db file
+
+# Environment variables
+.env
+.flaskenv
+
+# Log files
+*.log
+
+# Image processing related directories (assuming they contain generated/temporary files)
+# If 'imagecompressor' contains source code, do NOT ignore it.
+# Only ignore if these directories contain build artifacts or temporary outputs.
+/backend/compressed/
+/backend/originals/
+# /backend/imagecompressor/ # If this contains only generated output, uncomment this.
+                          # Otherwise, it's likely source code and should be tracked.
+
+# Frontend / Node.js / React specific ignores
+#############################################
+# Node modules
+node_modules/
+
+# build output
+build/
+dist/
+out/
+
+# Dependency files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# misc
+.DS_Store
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# IDE and OS specific files
+############################
+.idea/             # JetBrains IDEs (PyCharm, WebStorm, etc.)
+.vscode/           # VS Code settings (if user-specific)
+.history           # VS Code Local History
+*.swp              # Vim swap files
+*~                 # Backup files
+.DS_Store          # macOS folder metadata
+Thumbs.db          # Windows thumbnail cache
